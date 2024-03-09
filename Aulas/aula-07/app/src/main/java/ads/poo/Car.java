@@ -10,6 +10,7 @@ public class Car {
     //Methods
 
     public void speedUp(double u){
+
         speed+=u;
     }
 

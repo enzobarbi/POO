@@ -7,19 +7,26 @@ public class App {
 
     public static void main(String[] args) {
 
-        Car c = new Car();
+//        Car c = new Car();
+//
+//        System.out.println("Speed: " + c.getSpeed());
+//
+//        c.speedUp(100);
+//
+//        System.out.println("Speed: " + c.getSpeed());
+//
+//        c.speedDown(90);
+//
+//        System.out.println("Speed: " + c.getSpeed());
+//
+        Counter c = new Counter();
 
-        System.out.println("Speed: " + c.getSpeed());
+        c.countOne();
 
-        c.speedUp(100);
-
-        System.out.println("Speed: " + c.getSpeed());
-
-        c.speedDown(90);
-
-        System.out.println("Speed: " + c.getSpeed());
-
+        System.out.println("Count: " + c.getCount());
 
         }
+
+
 
     }
