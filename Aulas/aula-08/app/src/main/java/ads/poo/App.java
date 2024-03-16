@@ -35,7 +35,9 @@ public class App {
 //        Pessoa h = new Pessoa("Henrique", "Henrique@gmail.com", "38189378213");
 //        System.out.println(h);
 
-        Carro f1 = new Carro(-10);
+        Carro f1 = new Carro(100);
+        f1.acelerar(10);
+        f1.freiar(10000);
 
         System.out.println(f1);
 
