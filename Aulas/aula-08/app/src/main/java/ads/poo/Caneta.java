@@ -2,10 +2,23 @@ package ads.poo;
 
 public class Caneta {
 
+    private int tinta;
+    private String cor;
 
-    private int tinta = 100;
 
-    private String cor = "Preta";
+    public Caneta(int tinta, String cor) {
+        this.tinta = tinta;
+        this.cor = cor;
+    }
+
+    public Caneta(String cor){
+        this(100, cor);
+    }
+
+    public Caneta(){
+        this(100,"Vermelha");
+    }
+
 
 
 
@@ -21,6 +34,7 @@ public class Caneta {
     public void setTinta(int tinta) {
         this.tinta = tinta;
     }
+
 
     public String desenhando(){
         tinta--;
