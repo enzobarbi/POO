@@ -3,10 +3,11 @@ package ads.poo;
 public class Carro {
 
     private int velocidadeAtual;
+    private final int VEL_MAX = 100;
 
     public Carro(int velocidadeAtual) {
 
-        if(velocidadeAtual < 0 || velocidadeAtual > 200){
+        if(velocidadeAtual < 0 || velocidadeAtual > VEL_MAX){
             this.velocidadeAtual = 0;
         }else{
             this.velocidadeAtual = velocidadeAtual;
@@ -23,8 +24,8 @@ public class Carro {
 
     public void acelerar(int a) {
         int novaVelocidade = velocidadeAtual + a;
-        if (novaVelocidade > 200){
-            velocidadeAtual = 200;
+        if (novaVelocidade > VEL_MAX){
+            velocidadeAtual = VEL_MAX;
         }else{
             velocidadeAtual = novaVelocidade;
         }

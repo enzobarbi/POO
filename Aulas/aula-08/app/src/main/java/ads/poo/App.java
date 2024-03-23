@@ -10,28 +10,21 @@ public class App {
     public static void main(String[] args) {
 
 //        BuzzLightyear b = new BuzzLightyear();
-//
 //        System.out.println(b.dispararLaser());
-//
 //        System.out.println("Capacete aberto?" + b.isCapaceteAberto());
 //        b.capaceteAbertoFechado();
 //        System.out.println("Capacete aberto?" + b.isCapaceteAberto());
-//
 //        BuzzLightyear malvado = new BuzzLightyear();
-//
 //        System.out.println("Capacete aberto?" + malvado.isCapaceteAberto());
 
 
 
 //        Caneta bic = new Caneta(100, "Preta");
-//
 //        Caneta fabercastell = new Caneta("Azul");
-//
 //        Caneta pilot = new Caneta();
 
 
 //        Pessoa e = new Pessoa("Enzo", "enzo@gmail.com", "1026327983");
-//
 //        Pessoa h = new Pessoa("Henrique", "Henrique@gmail.com", "38189378213");
 //        System.out.println(h);
 

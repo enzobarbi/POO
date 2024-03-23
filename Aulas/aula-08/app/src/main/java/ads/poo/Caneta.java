@@ -2,6 +2,8 @@ package ads.poo;
 
 public class Caneta {
 
+
+    //Atributes
     private int tinta;
     private String cor;
 
@@ -18,8 +20,6 @@ public class Caneta {
     public Caneta(){
         this(100,"Vermelha");
     }
-
-
 
 
 
