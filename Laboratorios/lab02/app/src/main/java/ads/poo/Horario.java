@@ -73,8 +73,10 @@ public class Horario {
 
             return mse[d-2] + " e " + he[u];
         }
+    }
 
-
+    public int retornarHorarioEmSegundos(){
+        return segundo + minuto * 60 + hora * 60 * 60;
     }
 
 
