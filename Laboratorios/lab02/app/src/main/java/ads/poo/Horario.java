@@ -6,14 +6,20 @@ public class Horario {
     private int segundo;
 
     public Horario(int hora, int minuto, int segundo) {
-        this.hora = 0;
-        this.minuto = 0;
-        this.segundo = 0;
+        if (!this.setHora(hora) || !this.setMinuto(minuto) || !this.setSegundo(segundo)){
+            this.hora = 0;
+            this.minuto = 0;
+            this.segundo = 0;
+        }
 
-        setHora(hora);
-        setMinuto(minuto);
-        setSegundo(segundo);
+    }
 
+    public Horario(int hora){
+        this(hora, 0, 0);
+    }
+
+    public  Horario(int hora, int minuto){
+        this(hora, minuto, 0);
     }
 
     public Horario() {
@@ -57,7 +63,7 @@ public class Horario {
         return horasPorExtenso + ", " + minutosPorExtenso + " e " + segundosPorExtenso;
     }
 
-    private String converterNumeroParaExtenso(int numero) {
+    public String converterNumeroParaExtenso(int numero) {
         String [] he = {"zero", "um","dois","tres","quatro", "cinco", "seis", "sete", "oito", "nove", "dez", "onze", "doze", "treze", "quatorze",
                 "quinze", "dezeseis", "dezesete", "dezoito", "dezenove" };
 
