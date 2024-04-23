@@ -26,10 +26,22 @@ public class App {
         }
 
         if (!bancoDeDados.containsKey(livro2.getIsbn())) {
-            bancoDeDados.put(livro2.getIsbn(), livro1);
+            bancoDeDados.put(livro2.getIsbn(), livro2);
             System.out.println("Adicionado com sucesso!");
         }else{
             System.out.println("Ja existe!");
+        }
+
+        if (livro1.getIsbn().equals("1234567891012")){
+            livro1.getAutores().add(new Autor("Eichiro Oda", "Japones"));
+        }
+
+        if (!bancoDeDados.containsKey(livro1.getIsbn())) {
+            bancoDeDados.put(livro1.getIsbn(), livro1);
+            System.out.println("Eichiro Oda adicionado!");
+            
+        }else{
+            System.out.println("Ja existe esse livro!");
         }
         
         

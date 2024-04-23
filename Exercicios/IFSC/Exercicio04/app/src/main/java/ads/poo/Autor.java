@@ -14,5 +14,13 @@ public class Autor {
         return "Autor [nome=" + nome + ", nacionalidade=" + nacionalidade + "]";
     }
 
+    public String getNome() {
+        return nome;
+    }
+
+    public String getNacionalidade() {
+        return nacionalidade;
+    }
+
 
 }
