@@ -6,17 +6,20 @@ import java.util.HashMap;
 public class App {
     
     public static void main(String[] args) {
-        HashMap<String, Livro> bancoDeDados =new HashMap<>();
+
+        HashMap<String, Livro> bancoDeDados = new HashMap<>();
         
         ArrayList<Autor> a = new ArrayList<>();
 
+        ArrayList<Autor> b = new ArrayList<>();
+
         a.add(new Autor("JK Rowing", "Britsh"));
 
-        Livro livro1 = new Livro("Harry Potter", 10.00, a, "1234567891012");
+        Livro livro1 = new Livro("Harry Potter", 180.00, a, "9780545069670");
 
-        a.add(new Autor("Robert Cecil Martin", "Americano"));
+        b.add(new Autor("Robert Cecil Martin", "Americano"));
 
-        Livro livro2 = new Livro("Codigo Limpo", 20.0, a, "9780132350884");
+        Livro livro2 = new Livro("Codigo Limpo", 94.0, b, "9780132350884");
 
         if (!bancoDeDados.containsKey(livro1.getIsbn())) {
             bancoDeDados.put(livro1.getIsbn(), livro1);
@@ -32,19 +35,14 @@ public class App {
             System.out.println("Ja existe!");
         }
 
-        if (livro1.getIsbn().equals("1234567891012")){
-            livro1.getAutores().add(new Autor("Eichiro Oda", "Japones"));
+        Livro l = bancoDeDados.get("9780545069670");
+        if(l != null){
+            Autor c = new Autor("Eichiro Oda", "Japones");
+            l.addAutor(c);
         }
-
-        if (!bancoDeDados.containsKey(livro1.getIsbn())) {
-            bancoDeDados.put(livro1.getIsbn(), livro1);
-            System.out.println("Eichiro Oda adicionado!");
-            
-        }else{
-            System.out.println("Ja existe esse livro!");
-        }
-        
         
         System.out.println(bancoDeDados);
+
+
     }
 }
